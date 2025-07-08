@@ -1,0 +1,28 @@
+{% extends 'conteras_app/base.html' %}
+{% load static %}
+{% block content %}
+
+<div id="product-container" class="product-grid"></div>
+
+
+<script>
+    const imageBase = "{% static 'conteras_app/' %}";
+  
+    fetch("{% static 'conteras_app/info/Mshoes.json' %}")
+      .then(r => r.json())
+      .then(products => {
+        const container = document.getElementById("product-container");
+        products.forEach(p => {
+          container.innerHTML += `
+            <div class="shoe-card">
+              <img src="${imageBase + p.image}" alt="${p.name}">
+              <h3>${p.name}</h3>
+              <p>${p.description}</p>
+              <span>${p.price}</span>
+            </div>`;
+        });
+      });
+  </script>
+  
+
+{% endblock content %}

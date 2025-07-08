@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", inistial-scale="1.0">
+    <title>
+        Conteras
+    </title>
+    <link rel="stylesheet" href="{% static 'conteras_app/main.css' %}">
+</head>
+<body class="choose-page">
+    <div class="for-images">
+        <div id="click-left" class="side left">
+            <img src="{% static 'conteras_app/pictures/wp-2.png' %}" alt="yin">
+            <div class="text">
+                <div class="t-side-left">
+                    <p>M</p>  
+                    <p>A</p>
+                    <p>L</p>
+                    <p>E</p>
+                </div>
+            </div>
+        </div>
+        <div id="click-right" class="side right">
+            <img src="{% static 'conteras_app/pictures/blp-2.png' %}" alt="yang">
+            <div class="text">
+                <div class="t-side-right">
+                    <p>F</p>
+                    <p>E</p>
+                    <p>M</p>  
+                    <p>A</p>
+                    <p>L</p>
+                    <p>E</p>
+                </div>
+            </div>
+        </div> 
+    </div>
+</body>
+
+<script>
+    var left_click = document.getElementById("click-left")
+    left_click.addEventListener('click', function()  {
+        window.location.href = "{% url 'Conteras-mhome' %}"
+    });
+
+    var right_click = document.getElementById("click-right")
+    right_click.addEventListener('click', function()  {
+        window.location.href = "{% url 'Conteras-fhome' %}"
+    });
+</script>

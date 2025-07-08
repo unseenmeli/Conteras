@@ -1,0 +1,23 @@
+[
+    { "name":"Jeffrey West Lounger", "image":"pictures/lounger.jpg", "price":"£325", "description":"Suede Chelsea boot with Goodyear welted sole." },
+    { "name":"Jeffrey West Apolo", "image":"pictures/apolo.jpg", "price":"£295", "description":"Polished black leather dress shoe." },
+    { "name":"Jeffrey West Pickled Walnut Brogue", "image":"pictures/pickled_walnut.jpg", "price":"£295", "description":"Wingtip brogue in pickled walnut finish." },
+    { "name":"Jeffrey West Crocodile Black", "image":"pictures/croc_black.jpg", "price":"£350", "description":"Black crocodile-texture leather wingtip." },
+    { "name":"Jeffrey West Cuban Heel Black", "image":"pictures/cuban_black.jpg", "price":"£320", "description":"Lace-up with embossed heel and red lining." },
+    { "name":"Jeffrey West Twin Diamond Brogue", "image":"pictures/twin_diamond.jpg", "price":"£310", "description":"Brown brogue with twin diamond perforations." },
+    { "name":"Jeffrey West Lightning Silver Chelsea", "image":"pictures/lightning_silver.jpg", "price":"£340", "description":"Metallic silver Chelsea with red sole." },
+    { "name":"Jeffrey West Dexter Tan Chelsea", "image":"pictures/dexter_tan.jpg", "price":"£305", "description":"Tan Chelsea with crackled finish." },
+    { "name":"Jeffrey West Chukka Brown", "image":"pictures/chukka_brown.jpg", "price":"£315", "description":"Laser brogue punched Chukka boot." },
+    { "name":"Jeffrey West Harbor Gibson Mahogany", "image":"pictures/harbor_gibson.jpg", "price":"£330", "description":"Mahogany Gibson with burnished calf." },
+    { "name":"Jeffrey West Rogue Oxblood Chukka", "image":"pictures/template.jpg", "price":"£310", "description":"Chukka with gothic engravings and red sole." },
+    { "name":"Jeffrey West Ray Print Derby Red", "image":"pictures/template.jpg", "price":"£325", "description":"Red Derby with subtle ray print." },
+    { "name":"Jeffrey West Patriot Monk Strap", "image":"pictures/template.jpg", "price":"£335", "description":"Double monk in polished black." },
+    { "name":"Jeffrey West Brilleaux Wing Gibson", "image":"pictures/template.jpg", "price":"£315", "description":"Brown wingtip Gibson classic." },
+    { "name":"Jeffrey West Hunger Headstone", "image":"pictures/template.jpg", "price":"£345", "description":"Monk strap with etched headstone sole." },
+    { "name":"Jeffrey West Mancha Shadow Derby", "image":"pictures/template.jpg", "price":"£320", "description":"Shadow crust leather Derby." },
+    { "name":"Jeffrey West Laser Punch Chukka", "image":"pictures/template.jpg", "price":"£310", "description":"Laser-punched Chukka in brown." },
+    { "name":"Jeffrey West Patina Diamond Brogue", "image":"pictures/template.jpg", "price":"£325", "description":"Patina brogue with red diamond sole." },
+    { "name":"Jeffrey West Capon College Wingtip", "image":"pictures/template.jpg", "price":"£330", "description":"Classic wingtip in brown college finish." },
+    { "name":"Jeffrey West Cuban Heel Brown", "image":"pictures/template.jpg", "price":"£320", "description":"Cuban heel Derby in polished brown." }
+  ]
+  

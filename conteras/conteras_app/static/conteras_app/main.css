@@ -1,0 +1,322 @@
+/* general stylying vcookavt chat */
+
+
+html, body {
+    height: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/* aq viwyebt headers to */
+
+header {
+    background-color: black;
+    height: 80px;
+    color: white;
+    box-shadow: 0px 6px 10px rgb(0, 0, 0, 0.499);
+}
+
+nav {
+    height: inherit;
+}
+
+ul {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+@keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+.header-a {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.header-a:hover {
+    background: linear-gradient(270deg, #ffffff, #000000, #ffffff);
+    background-size: 600% 600%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 4s ease infinite;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+/* aq viwyebt base */
+
+.base-body {
+    background-image: url('pictures/pn.png');
+    background-position-x: center;
+    background-size: 75%;
+}
+
+/* aq viwyebt choose */
+
+.for-images {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.for-images img {
+    max-width: 300px;
+}
+
+.choose-page {
+    background-image: url('pictures/jp.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.side {
+    transform: scale(0.98);
+}
+
+.side.left {
+    margin-right: -3px;
+    transition: transform 1s;
+}
+
+.side.right {
+    margin-left: -3px;
+    transition: transform 1s;
+}
+
+.side.left:hover {
+    cursor: pointer;
+    margin-right: 0px !important;
+    transform: scale(1.00);
+    transform-origin: right center;
+}
+
+.side.right:hover {
+    cursor: pointer;
+    margin-right: 0px !important;
+    transform: scale(1.00);
+    transform-origin: left center;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+}
+
+.text p {
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+.t-side-left {
+    transform: translateY(-500px) translateX(-150px);
+}
+
+.t-side-right {
+    transform: translateY(-600px) translateX(350px);
+}
+
+/* load page style */
+
+.load-page {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+.load-page .background-load {
+    background-image: url('pictures/jp.jpg');
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1000;
+    overflow: auto;
+}
+
+#welcomeText {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 4s ease, transform 5s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(-150px);
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    font-weight: bold;
+    text-shadow: 0px 2px 4px black;
+    text-align: center;
+    z-index: 1;
+}
+
+#welcomeText.visible {
+    opacity: 1;
+    transform: translate(-50%, -50%) translateY(-50px);
+}
+
+/* aq aaaaa modal style */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+  
+.modal-content {
+    background-image: url('pictures/bamboo.jpg');
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin: 15% auto;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.modal-intext {
+    position: absolute;
+    margin-top: 240px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+ }
+
+#select-theme {
+    padding: 2px 8px;
+ }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* doing male/female page */
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.product-grid h3 {
+    font-size: 15px;
+}
+
+.product-grid p {
+    font-size: 14px;
+}
+  
+.shoe-card {
+    width: 250px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.499);
+}
+  
+.shoe-card img {
+    width: 100%;
+    height: auto;
+}
+  
+  
+/* doing dark theme */
+/* doing dark theme */
+/* doing dark theme */
+
+body.dark-mode {
+    background-color: #121212;
+    color: rgb(0, 0, 0);
+    background-image: url('pictures/pnw.png');
+    background-position-x: center;
+    background-repeat: repeat-y repeat-x;
+    background-size: 75%;
+}
+  
+  body.dark-mode .modal-content {
+    background-color: #1f1f1f;
+    color: rgb(0, 0, 0);
+}
+
+body.dark-mode .modal-content {
+    background-image: url('pictures/bamboob.jpg');
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.499);
+}
+
+body.dark-mode .shoe-card {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.499);
+}
+
+body.dark-mode #closeModalBtn {
+    color: white;
+  }
+  
+body.dark-mode .main-header {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 1)
+}
+
+@media (max-width: 420px) {
+    #welcomeText {
+        font-size: 23.5px;
+        max-width: 420px;
+    }
+
+    .for-images {
+        transform: scale(0.3);
+    }
+
+    .main-header nav ul {
+        gap: 60px !important;
+    }
+}

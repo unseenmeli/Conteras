@@ -1,0 +1,100 @@
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Conteras
+    </title>
+    <link rel="stylesheet" href="{% static 'conteras_app/main.css' %}">
+</head>
+<body class="base-body">
+    <header class="main-header">
+        <nav>
+            <ul>
+                <li>
+                    {% if 'mhome' in request.path %}
+                    <a href="{% url 'Conteras-mhome' %}" class="header-a">home</a>
+                    {% elif 'fhome' in request.path %}
+                    <a href="{% url 'Conteras-fhome' %}" class="header-a">home</a>
+                    {% else %}
+                    <a href="{% url 'choose' %}" class="header-a">home</a>
+                    {% endif %}
+                </li>
+                <li>
+                    <a href="{% url 'Conteras-choose' %}" class="header-a">gender</a>
+                </li>
+                <li>
+                    <a href="#" id="open-popup" class="header-a">settings</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span id="closeModalBtn" class="close">&times;</span>
+            <div class="modal-intext">
+                <label for="theme-select">Choose theme:</label>
+                <select name="selectptheme" id="theme-select">
+                    <option value="light">light</option>
+                    <option value="dark">dark</option>
+                </select>
+            </div>
+        </div>
+      </div>
+
+<main>
+    {% block content %}{% endblock content %}
+</main>
+
+</body>
+<script>
+    const modal = document.getElementById("myModal");
+    const openLink = document.getElementById("open-popup");
+    const closeBtn = document.getElementById("closeModalBtn");
+  
+    openLink.addEventListener("click", function(e) {
+      e.preventDefault();
+      modal.style.display = "block";
+    });
+  
+    closeBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+  
+    window.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+    
+    const themeSelect = document.getElementById("theme-select");
+
+    themeSelect.addEventListener("change", function () {
+    const theme = themeSelect.value;
+
+    if (theme === "dark") {
+        document.body.classList.add("dark-mode");
+    } else {
+        document.body.classList.remove("dark-mode");
+    }
+
+    localStorage.setItem("theme", theme);
+    });
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+        themeSelect.value = "dark";
+    } else {
+        themeSelect.value = "light";
+    }
+    });
+
+  </script>
+  

@@ -1,0 +1,23 @@
+[
+    { "name": "Isabel Marant Bekett Wedge Sneaker", "image": "pictures/bekett_wedge.jpg", "price": "£420", "description": "Signature suede wedge sneakers with velcro straps and a hidden heel." },
+    { "name": "Isabel Marant Lenny Ankle Boot", "image": "pictures/lenny_boot.jpg", "price": "£590", "description": "Pointed-toe leather ankle boots with Western-inspired silhouette." },
+    { "name": "Isabel Marant Dicker Boot", "image": "pictures/dicker.jpg", "price": "£445", "description": "Iconic suede ankle boots with low stacked heel and pull-on style." },
+    { "name": "Isabel Marant Luliana Tall Boot", "image": "pictures/luliana.jpg", "price": "£795", "description": "Slouchy tall suede boots with almond toe and sleek stacked heel." },
+    { "name": "Isabel Marant Binkoo Loafer", "image": "pictures/binkoo.jpg", "price": "£480", "description": "Polished leather loafers with a square toe and minimal hardware." },
+    { "name": "Isabel Marant Beth Low Top Sneaker", "image": "pictures/beth.jpg", "price": "£360", "description": "Casual white leather sneaker with contrast heel tab and velcro closure." },
+    { "name": "Isabel Marant Ririo Mule", "image": "pictures/ririo.jpg", "price": "£375", "description": "Backless pointed-toe mule with feminine bow detail in soft leather." },
+    { "name": "Isabel Marant Milly Clog", "image": "pictures/milly.jpg", "price": "£425", "description": "Wooden platform clogs with studded trim and tumbled leather upper." },
+    { "name": "Isabel Marant Devis Western Boot", "image": "pictures/devis.jpg", "price": "£680", "description": "Cowboy-style boot with stitched leather and angled heel." },
+    { "name": "Isabel Marant Lennyo Slide Sandal", "image": "pictures/lennyo.jpg", "price": "£245", "description": "Sporty-casual velcro slides with rubber sole and nylon upper." },
+    { "name": "Isabel Marant Jaeryn Sandal", "image": "pictures/template.jpg", "price": "£430", "description": "Strappy leather sandals with buckle closure and block heel." },
+    { "name": "Isabel Marant Miro Boot", "image": "pictures/template.jpg", "price": "£650", "description": "Elegant knee-high boot with pointed toe and sculpted shaft." },
+    { "name": "Isabel Marant Deren Mule", "image": "pictures/template.jpg", "price": "£390", "description": "Slip-on mule with square toe and gold metallic finish." },
+    { "name": "Isabel Marant Piris Espadrille", "image": "pictures/template.jpg", "price": "£295", "description": "Canvas wedge espadrille with wrap-around ankle tie." },
+    { "name": "Isabel Marant Cylia Platform Sandal", "image": "pictures/template.jpg", "price": "£375", "description": "Suede platform sandal with jute sole and leather straps." },
+    { "name": "Isabel Marant Enely Heeled Sandal", "image": "pictures/template.jpg", "price": "£405", "description": "Minimalist open-toe sandal with sculptural block heel." },
+    { "name": "Isabel Marant Ceylan Ballet Flat", "image": "pictures/template.jpg", "price": "£340", "description": "Pointed-toe ballet flat with ruched leather and slim fit." },
+    { "name": "Isabel Marant Leto Ankle Strap Heel", "image": "pictures/template.jpg", "price": "£495", "description": "Open-toe heel with thin leather straps and side buckle." },
+    { "name": "Isabel Marant Breze Suede Boot", "image": "pictures/template.jpg", "price": "£720", "description": "Elegant high suede boot with French countryside charm." },
+    { "name": "Isabel Marant Sefora Combat Boot", "image": "pictures/template.jpg", "price": "£620", "description": "Lace-up combat boots with chunky sole and rugged leather." }
+  ]
+  
